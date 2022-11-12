@@ -1,0 +1,25 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Static Analysis') {
+            steps {
+                echo 'Ethan Moraes' 
+            }
+        }
+        stage('Compiling') {
+            steps {
+                echo 'Compile The Given Source Code' 
+            }
+        }
+        stage('Security Check') {
+            steps {
+                echo 'Run Security Checks In The Application' 
+            }
+        }
+        stage('Unit Testing') {
+            steps {
+                echo 'Run unit tests from the source code' 
+            }
+        }
+     }
+  }
